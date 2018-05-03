@@ -1,0 +1,93 @@
+PODS:
+  - Alamofire (4.7.0)
+  - CountryList (1.1)
+  - DropDown (2.3.1)
+  - Hero (1.1.0)
+  - IGColorPicker (0.3.0):
+    - M13Checkbox (~> 2.2.0)
+  - InitialsImageView (0.2.0)
+  - IQKeyboardManagerSwift (6.0.2)
+  - Ji (2.1.0):
+    - Ji/Ji (= 2.1.0)
+  - Ji/Ji (2.1.0):
+    - Ji/Ji-libxml
+  - Ji/Ji-libxml (2.1.0)
+  - Letters (2.1.1)
+  - M13Checkbox (2.2.6)
+  - MarqueeLabel/Swift (3.1.4)
+  - NotificationBannerSwift (1.6.2):
+    - MarqueeLabel/Swift
+    - SnapKit (~> 4.0)
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
+  - PickerView (0.3.3)
+  - Player (0.8.4)
+  - ReadabilityKit (0.7.1):
+    - Ji
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+  - SnapKit (4.0.0)
+  - SwiftyCam (2.7.0)
+  - SwipeCellKit (2.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - CountryList
+  - DropDown
+  - Hero
+  - IGColorPicker
+  - InitialsImageView
+  - IQKeyboardManagerSwift
+  - Letters
+  - NotificationBannerSwift
+  - NVActivityIndicatorView
+  - PickerView
+  - Player (~> 0.8.0)
+  - ReadabilityKit
+  - SDWebImage
+  - SwiftyCam (from `https://github.com/Awalz/SwiftyCam.git`, branch `Swift4`)
+  - SwipeCellKit (from `https://github.com/SwipeCellKit/SwipeCellKit.git`, branch `develop`)
+
+EXTERNAL SOURCES:
+  SwiftyCam:
+    :branch: Swift4
+    :git: https://github.com/Awalz/SwiftyCam.git
+  SwipeCellKit:
+    :branch: develop
+    :git: https://github.com/SwipeCellKit/SwipeCellKit.git
+
+CHECKOUT OPTIONS:
+  SwiftyCam:
+    :commit: 85d713d643159cda72db2f3e230777af50cded94
+    :git: https://github.com/Awalz/SwiftyCam.git
+  SwipeCellKit:
+    :commit: 6724b0948643d2c25d7174bc94e4e068840cb42f
+    :git: https://github.com/SwipeCellKit/SwipeCellKit.git
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  CountryList: ad58cd670c4ecab6bb014abebc12e63f619174b2
+  DropDown: 20499c7b2731b0d21609af924e47c7677a2be50d
+  Hero: ce59e81c79390613d97b43da7179e2c5e1017e04
+  IGColorPicker: 645a9523b5ff756bf29e0a858d2fe06ea7b910ff
+  InitialsImageView: 5f524ccb8856ea2ef891ac42adcae53f7669aceb
+  IQKeyboardManagerSwift: 59d4b0e140bc546c3c76ae5bb35b3dafd10b8172
+  Ji: 21946da4e13425485ddd424edfaeeced0d80ad28
+  Letters: 34476b0d413813bcf9273b2760be7ff4cd75f5c7
+  M13Checkbox: 9989b7e275f18493bd33b960dc68374c47d0027b
+  MarqueeLabel: bf768455fe88d427f71476ebb23f9092b660f40b
+  NotificationBannerSwift: 4eceb2add9d5eaa0596c63d49690b4d6476e74ec
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
+  PickerView: a6703d2f7cb1fafc8a3aef4af255a5acd320ddff
+  Player: e45514e9e5fb8ff18f50eb2ba6f84dac9b6a0024
+  ReadabilityKit: 45e79725f6d0377c555f38d9df7a6d4435898c04
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyCam: 7c826b73a5b208677aee29390582c771bf748661
+  SwipeCellKit: 80bdb188166484d8a0d813d9fd7748ad33181815
+
+PODFILE CHECKSUM: 258ce6084e71538c347fdd8ed2e7ec4fb758bb08
+
+COCOAPODS: 1.4.0
