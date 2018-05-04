@@ -9,70 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "24/Authentication/SignUpViewController.swift"
-            timestampString = "546939821.2275881"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "signUpBtnAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "24/Authentication/SignUpViewController.swift"
-            timestampString = "546939821.227851"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "signUpBtnAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "24/Authentication/SignUpViewController.swift"
-            timestampString = "546939821.228007"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "signUpBtnAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "24/Authentication/SignUpViewController.swift"
-            timestampString = "546939821.228155"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "signUpBtnAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "24/APIDataHandler.swift"
             timestampString = "546937834.608459"
             startingColumnNumber = "9223372036854775807"
@@ -89,8 +25,8 @@
                   symbolName = "_4.Credits.registerUserRequest(dict: Swift.Dictionary&lt;Swift.String, Any&gt;, completion: (Swift.Bool, Swift.String) -&gt; ()) -&gt; ()"
                   moduleName = "24"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Development/iPhone%20Development/Client/Upwork/India/24%20%20Updated/24/APIDataHandler.swift"
-                  timestampString = "546939821.675504"
+                  urlString = "file:///Development/iPhone%20Development/Client/Upwork/24/24/APIDataHandler.swift"
+                  timestampString = "547134688.853256"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -104,8 +40,8 @@
                   symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in _4.Credits.registerUserRequest(dict: Swift.Dictionary&lt;Swift.String, Any&gt;, completion: (Swift.Bool, Swift.String) -&gt; ()) -&gt; ()"
                   moduleName = "24"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Development/iPhone%20Development/Client/Upwork/India/24%20%20Updated/24/APIDataHandler.swift"
-                  timestampString = "546939821.680531"
+                  urlString = "file:///Development/iPhone%20Development/Client/Upwork/24/24/APIDataHandler.swift"
+                  timestampString = "547134688.872076"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "35"
@@ -192,6 +128,22 @@
             startingLineNumber = "40"
             endingLineNumber = "40"
             landmarkName = "registerUserRequest(dict:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "24/Camera/CameraView/NormalCameraViewController.swift"
+            timestampString = "547134687.9669091"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1196"
+            endingLineNumber = "1196"
+            landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

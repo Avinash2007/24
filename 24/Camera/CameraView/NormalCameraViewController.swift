@@ -991,6 +991,7 @@ class NormalCameraViewController: SwiftyCamViewController, SwiftyCamViewControll
     }
     
     
+    
     @objc func handleFocus (tap:UITapGestureRecognizer) {
        print("handleFocus")
     }
@@ -1162,7 +1163,7 @@ class NormalCameraViewController: SwiftyCamViewController, SwiftyCamViewControll
     
     func createMoment(){
         
-        let activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 55, y: 0, width: 40, height: 40), type: .ballClipRotateMultiple, color: UIColor.white, padding: 15)
+        let activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 55, y: 0, width: 50, height: 50), type: .ballClipRotateMultiple, color: UIColor.white, padding: 0)
         addMomentBtn.setTitle("", for: UIControlState.normal)
         self.addMomentBtn.addSubview(activityIndicatorView)
 
@@ -1245,8 +1246,21 @@ class NormalCameraViewController: SwiftyCamViewController, SwiftyCamViewControll
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
        // capturedImage.image = image
         capturedImage = image
-        //dismiss(animated: true, completion: nil)
-        performSegue(withIdentifier: "PreviewPhotoSegue", sender: nil)
+        
+        
+        picker.dismiss(animated: true, completion: {
+            self.performSegue(withIdentifier: "PreviewPhotoSegue", sender: nil)
+        })
+        
+//        dismiss(animated: false, completion: nil)
+        
+//        dismiss(animated: true, completion: {
+//            performSegue(withIdentifier: "PreviewPhotoSegue", sender: nil)
+//        })
+//        dismiss(animated: true, completion: ^{
+//            performSegue(withIdentifier: "PreviewPhotoSegue", sender: nil)
+//            })
+        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
