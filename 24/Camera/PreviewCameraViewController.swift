@@ -109,6 +109,11 @@ class PreviewCameraViewController: UIViewController, CloseViewDelegate {
        
         let controller = storyboard?.instantiateViewController(withIdentifier: "SelectGroupViewController") as! SelectGroupViewController
         controller.delegate = self
+        
+        let layer = CAGradientLayer()
+        layer.frame = CGRect(x: 0, y: self.view.frame.size.height-50, width: self.view.frame.size.width, height: 50)
+        layer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        view.layer.addSublayer(layer)
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -69,7 +69,7 @@ class HomeTableViewCell: UITableViewCell {
     
     
     func loadCell(post:NewsFeed) {
-        if post.profileImageUrl != ""{
+        if post.profileImageUrl != "" && post.profileImageUrl != nil {
             let profileUrlString = "http://api.my24space.com/public/uploads/profile/" + "\(post.profileImageUrl!)"
             let profileUrl = profileUrlString.replacingOccurrences(of: " ", with: "%20")
             loadImage(profileUrl, profileImageView, activity: profileIndicator, defaultImage: #imageLiteral(resourceName: "profilepicPlaceholder"))

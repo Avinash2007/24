@@ -11,8 +11,10 @@ import NVActivityIndicatorView
 
 class HomeViewController: BaseViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var textViewOutlet: UIView!
+//    @IBOutlet weak var textViewOutlet: UIView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var btnMessage:UIButton!
+    private var gradient: CAGradientLayer!
     var isMoved = false
     var list: [NewsFeed] = []
     var urlDataList : [UrlData] = []
@@ -37,11 +39,33 @@ class HomeViewController: BaseViewController, UITextFieldDelegate, UITableViewDe
        return view
     }()
     
+    lazy var headerView:UIView = {
+        let view = UIView.init(frame: CGRect(x: 0.0, y: 0.0, width: tableView.frame.size.width, height: 100.0))
+        view.backgroundColor = .red
+        return view
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyShadow(view: textViewOutlet, radius: 30)
+//        applyShadow(view: textViewOutlet, radius: 30)
         self.tableView.addSubview(self.refreshControl)
+//        self.tableView.tableHeaderView = self.headerView
+        
+        btnMessage.layer.cornerRadius = 10.0
+        btnMessage.layer.shadowColor = UIColor.black.cgColor
+        btnMessage.layer.shadowOpacity = 0.5
+        btnMessage.layer.shadowOffset = CGSize.zero
+        btnMessage.layer.shadowRadius = 5
+        
+      
+        let layer = CAGradientLayer()
+        layer.frame = CGRect(x: 0, y: self.view.frame.size.height-50, width: self.view.frame.size.width, height: 50)
+        layer.colors = [UIColor.clear.cgColor, UIColor.white.cgColor]
+        view.layer.addSublayer(layer)
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -77,6 +101,10 @@ class HomeViewController: BaseViewController, UITextFieldDelegate, UITableViewDe
         NotificationCenter.default.removeObserver(self, name:  NSNotification.Name(rawValue: "RefreshData"), object: nil)
     }
     
+    
+    
+    
+    // MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }
@@ -94,7 +122,7 @@ class HomeViewController: BaseViewController, UITextFieldDelegate, UITableViewDe
   
         if data.media_type == 1{
             
-            if data.profileImageUrl != ""{
+            if data.profileImageUrl != "" && data.profileImageUrl != nil {
                 let profileUrlString = "http://api.my24space.com/public/uploads/profile/" + "\(data.profileImageUrl!)"
                 let profileUrl = profileUrlString.replacingOccurrences(of: " ", with: "%20")
                 loadImage(profileUrl, imageCell.profileImageView, activity: imageCell.profileIndicator, defaultImage: nil)
@@ -444,7 +472,7 @@ extension HomeViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if let _ = scrollView as? UITableView {
             UIView.animate(withDuration: 0.20, animations: {
-                self.textViewOutlet.alpha = 1
+//                self.textViewOutlet.alpha = 1
             })
         }
     }
@@ -452,7 +480,7 @@ extension HomeViewController: UIScrollViewDelegate {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         if let _ = scrollView as? UITableView {
             UIView.animate(withDuration: 0.33, animations: {
-                self.textViewOutlet.alpha = 0
+//                self.textViewOutlet.alpha = 0
             })
         }
     }
@@ -580,3 +608,4 @@ extension HomeViewController:VideoPlayerViewDelegate{
         }
     }
 }
+
